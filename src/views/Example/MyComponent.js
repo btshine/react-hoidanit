@@ -63,12 +63,21 @@ class MyComponent extends React.Component {
         })
 
 
+
         //delete by index
         // let currentJobs = this.state.arrJobs
         // currentJobs.splice(index, 1)
         // this.setState({
         //     arrJobs: currentJobs
         // })
+    }
+
+    componentDidMount() {
+        console.log('run component did mount')
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        console.log('run didupdate: ', prevState, this.state)
     }
 
 

@@ -8,11 +8,11 @@ const initState = {
         },
         {
             id: 2,
-            name: 'tin dep trai'
+            name: 'tin 2'
         },
         {
             id: 3,
-            name: 'tin dep trai pro'
+            name: 'tin 3'
         }
     ],
     post: []

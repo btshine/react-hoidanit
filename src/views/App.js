@@ -14,6 +14,11 @@ import {
   Link
 } from "react-router-dom";
 import DetailUser from './Users/DetailUser';
+import LoginPage from './Login/LoginPage';
+import Dashboard from './Login/DashBoard';
+import Logout from './Login/LogOut';
+import NewEmployee from './Login/NewEmployee';
+import TrelloIntegration from './Login/TrelloIntegration';
 
 function App() {
   return (
@@ -40,6 +45,21 @@ function App() {
             </Route>
             <Route path="/user/:id">
               <DetailUser />
+            </Route>
+            <Route path="/login">
+              <LoginPage />
+            </Route>
+            <Route path="/logout">
+              <Logout />
+            </Route>
+            <Route path="/dashboard">
+              <Dashboard />
+            </Route>
+            <Route path="/newEmployee">
+              <NewEmployee />
+            </Route>
+            <Route path="/trello">
+              <TrelloIntegration />
             </Route>
           </Switch>
           {/* <MyComponent></MyComponent> */}

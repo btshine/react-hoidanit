@@ -11,6 +11,7 @@ class DetailUser extends React.Component {
         if (this.props.match && this.props.match.params) {
             let id = this.props.match.params.id
             let res = await axios.get(`https://reqres.in/api/users/${id}`)
+            //let res = await axios.get(`https://localhost:7269/api/Employees/${id}`)
             this.setState({
                 user: res && res.data && res.data.data ? res.data.data : {}
             })
@@ -38,6 +39,12 @@ class DetailUser extends React.Component {
                     <div>
                         <img src={user.avatar} />
                     </div>
+                    {/* <div>
+                        empployeeName name: {user.empployeeName}
+                    </div>
+                    <div>
+                        Email: {user.email}
+                    </div> */}
                     <div>
                         <button type='button' onClick={() => this.handleBackButton()}>Back</button>
                     </div>
